@@ -18,20 +18,20 @@ Southeast Australia Atlantis
 ### Ecosim models
 Southern Benguela Ecosim\
 East Bass Strait Ecosim\
-Cook Strait Ecosim\
+Cook Strait Ecosim
 
 ### Ecospace models
-Brazil Ecospace\
+Brazil Ecospace
 
 ### mizer models
 Baltic Sea mizer\
 Eastern Scotian Shelf mizer\
 Hawaii longline mizer\
 Prydz Bay (East Antarctica) mizer\
-Western South Pacific tuna longline mizer\
+Western South Pacific tuna longline mizer
 
 ### OSMOSE models
-Northern Humboldt Current OSMOSE\
+Northern Humboldt Current OSMOSE
 
 
 
