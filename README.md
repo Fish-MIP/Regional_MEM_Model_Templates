@@ -1,2 +1,2 @@
 # MEM_Model_Templates
-Documentation of Participating Global and Regional Marine Ecosystems Models in FishMIP 2.0
+Documentation of Global and Regional Marine Ecosystem Models Participating in FishMIP 2.0
