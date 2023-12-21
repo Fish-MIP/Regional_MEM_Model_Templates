@@ -1,4 +1,4 @@
-# Regional Marine Ecosystem Model Completed Model Descriptions and Assumptions Templates
+# Regional Marine Ecosystem Model - Descriptions, Inputs, and Assumptions 
 
 Documentation of Global and Regional Marine Ecosystem Models Participating in FishMIP 2.0.
 
