@@ -12,26 +12,26 @@ If you are interested in contributing simulations with your regional model to Fi
 Model template - blank markdown document to be copied and populated. See below documents filled out for each model type and domain:
 
 ### Atlantis models
-Southern Benguela Atlantis
+Southern Benguela Atlantis\
 Southeast Australia Atlantis
 
 ### Ecosim models
-Southern Benguela Ecosim 
-East Bass Strait Ecosim
-Cook Strait Ecosim
+Southern Benguela Ecosim\
+East Bass Strait Ecosim\
+Cook Strait Ecosim\
 
 ### Ecospace models
-Brazil Ecospace
+Brazil Ecospace\
 
 ### mizer models
-Baltic Sea mizer
-Eastern Scotian Shelf mizer
-Hawaii longline mizer
-Prydz Bay (East Antarctica) mizer
-Western South Pacific tuna longline mizer
+Baltic Sea mizer\
+Eastern Scotian Shelf mizer\
+Hawaii longline mizer\
+Prydz Bay (East Antarctica) mizer\
+Western South Pacific tuna longline mizer\
 
 ### OSMOSE models
-Northern Humboldt Current OSMOSE
+Northern Humboldt Current OSMOSE\
 
 
 
