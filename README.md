@@ -6,7 +6,7 @@ The Fisheries and Marine Ecosystem Model Intercomparison Project (FishMIP) aims 
 
 In this repository, we catalog descriptions and assumptions of contributing models participating in FishMIP 2.0, based on information collected in this model template. The data presented here have a particular focus on assumptions under our Track A (ISIMIP 3a) model evaluation simulation experiments. Models catalogued here will also need to submit shapefiles of regional model domains. This is to help provide a workflow for regional modellers to carry out their simulations including tools such as using our Shiny Apps.
 
-If you are interested in contributing simulations with your regional model to FishMIP, please contact our [fishmip.coordinators\@gmail.com](mailto:fishmip.coordinators@gmail.com){.email}. More details will also be in our website: fishmip.org
+If you are interested in contributing simulations with your regional model to FishMIP, please contact our (mailto:fishmip.coordinators@gmail.com){.email}. More details will also be in our website: fishmip.org
 
 ## Table of contents
 
