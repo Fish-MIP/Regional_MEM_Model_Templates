@@ -59,17 +59,13 @@ Blanchard, J. L., Andersen, K. H., Scott, F., Hintzen, N. T., Piet, G., & Jennin
 
 ![](images/biomasscalibration2.png)
 
-**Model changes or  improvements(s) made as a result of calibration**
-
-$$Please provide detail of any other parameters or model changes since the last round as a result of this calibration$$\
+**Model changes or  improvements(s) made as a result of calibration**\
 **ADDITIONAL DETAILS FOR REGIONAL MODELS ONLY:**
 
 **Downscaling method**
-
-$$Please describe further details how the LME level fishing effort was downscaled to your region, providing further information on what data, if any were used, E.g. $$
 
 N/A
 
 **The "base" year range of the regional model**
 
-$$If you expressed effort relative to the effort in your base model, which year was the base year and how was this done$$
+N/A
