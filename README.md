@@ -1,6 +1,6 @@
 # Regional Marine Ecosystem Models - Documentation of Inputs and Assumptions
 
-Documentation of Global and Regional Marine Ecosystem Models Participating in FishMIP 2.0.
+Documentation of Regional Marine Ecosystem Models Participating in FishMIP 2.0.
 
 The Fisheries and Marine Ecosystem Model Intercomparison Project (FishMIP) aims to improve our understanding of the long-term impacts of climate change on fisheries and marine ecosystems, so we can improve future projections, which in turn can help inform policy.
 
