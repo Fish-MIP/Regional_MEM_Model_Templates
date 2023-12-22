@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>balticsea_mizer</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="balticsea_mizer_files/libs/clipboard/clipboard.min.js"></script>
+<script src="balticsea_mizer_files/libs/quarto-html/quarto.js"></script>
+<script src="balticsea_mizer_files/libs/quarto-html/popper.min.js"></script>
+<script src="balticsea_mizer_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="balticsea_mizer_files/libs/quarto-html/anchor.min.js"></script>
+<link href="balticsea_mizer_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="balticsea_mizer_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="balticsea_mizer_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="balticsea_mizer_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="balticsea_mizer_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<p><strong>Model name</strong></p>
+<p>Baltic Sea Mizer</p>
+<p><strong>Contacts</strong></p>
+<p>Max Lindmark (</p>
+<p><strong>Spatial scale forcing</strong></p>
+<p>Regional Scale, stock level. Not spatially explicit (ICES subdivions 25–29 and 32)</p>
+<p><strong>Levels of gear disaggregation</strong></p>
+<p>Bottom trawl. The model was calibrated to average values of F by species for the years 1992–2002, but was then fed with annual values of F for further analysis</p>
+<p><strong>Levels of functional group disaggregation</strong></p>
+<p>The Baltic Sea mizer model only has 3 fish species (cod and the two pelagic species sprat and herring. We used species-specific fishing efforts. We also have a plankton and a benthic resource spectrum.</p>
+<p><strong>Spatial grid-cell allocation method</strong></p>
+<p>The model is not spatially explicit, and we simply used total SSB for the stocks and their F values for calibration.&nbsp;</p>
+<p><strong>Fishing mortality rate equation</strong></p>
+<p>We assume a knife edge fishing mortality starting at the size of maturation, which largely reflects the current situation. It is simply entered in the model as a size-based mortality. Total mortality is the sum of the background, starvation, fishing and predation mortality. The equation for the fishing mortality is:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/balticseamizereq1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>where Si is the selectivity.</p>
+<p><strong>Selectivity (size,age,species)</strong></p>
+<p>See above.</p>
+<p><strong>Model calibration</strong></p>
+<p>Catchability is not included in the model. The model was calibrated to SSB from stock assessments (averaged between years 1992–2002). We treated Rmax as a free parameter and estimated it by finding the vector of species-specific Rmax that minimized the difference between predicted and observed SSB. This is a parameter that includes a density-dependent recruitment. The total potential recruitment is given by size and allocation to reproduction:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/balticseamizereq2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>The actual recruitment follows a Beverton-Holt stock recruit relationship for, with a species-specific maximum recruitment (Rmax,i):</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/balticseamizereq3.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>where Rmax,i is treated as a free parameter and is estimated in the calibration process by minimizing the residual sum of squares between spawning stock biomass from stock assessments and the MSSM.&nbsp;</p>
+<p>Projections from 1992 and 2012 also generally tracked the assessment SSBs correlation coefficients of 0.65, 0.94 and 0.54 for cod, herring, and sprat, respectively). Growth curves emerging from the model were in close agreement with von Bertalanffy curves fitted to length-at-age data from scientific trawl surveys, after a stepwise manual increase of the constant in the allometric maximum-consumption rate. We also found that emerging diets in the size-spectrum model were in line with observed diets. The level of density dependence imposed by the stock-recruitment function was also evaluated by assessing the ratio of the physiological recruitment, Rphy,i, to the recruitment Ri. These final values mean that stock recruitment is sensitive to the stock biomass, but there is some density dependence limiting recruitment (i.e., not all spawn produced become recruits). The fishing mortality leading to the highest long-term yield (FMSY) from the model (estimated for one species at the time while keeping each species at their mean assessment FMSY) agreed with the assessment FMSY for sprat and herring. For cod, FMSY is lower in the size-spectrum model than in stock assessments.</p>
+<p><strong>Catchability and Creep (yearly rate of change catchability) Estimates</strong></p>
+<p>We do not model catchability and instead just use estimated fishing mortalities from stock assessments.</p>
+<p><strong>Further details on calibration</strong></p>
+<p>No, we calibrated to SSB using Rmax, but used FMSY, level of density dependence, growth (size-at-age) and diets to ensure the model was capturing main features (though without any quantitative criteria).</p>
+<p><strong>Statistical metrics</strong></p>
+<p>We used the "L-BFGS- B" algorithm in the 'R'-optimization function 'optim' to minimize the residual sum of squares between the natural log of spawning stock biomass estimated in stock assessment output and those emergent in the model for the years 1992–2002.&nbsp;</p>
+<p><strong>Statistical results (summary)</strong></p>
+<p>See above.</p>
+<p><strong>Model changes or improvements(s) made as a result of calibration</strong></p>
+<p>NA</p>
+<p><strong>ADDITIONAL DETAILS FOR REGIONAL MODELS ONLY:</strong></p>
+<p><strong>Downscaling method</strong></p>
+<p>We used stock-specific models and fishing mortalities, so no downscaling was needed.&nbsp;</p>
+<p><strong>The "base" year range of the regional model</strong></p>
+<p>We used absolute fishing mortalities (but calibrated the model to average conditions over a 20-year period.</p>
+<p><strong>Environmental and biogeochemical variables and equations</strong></p>
+<p>Temperature is included in the model and the projections stem from the regional coupled model system RCA4-NEMO under the RCP 8.5 scenario. These relative temperature trends (relative to mean in 1970–1999) are scaled by adding a constant such that the average temperature in the calibration time period is Tref (10°C).</p>
+<p>We scale rates of individual metabolism, maximum consumption, search volume and background mortality with temperature. Metabolism and consumption are key terms in the energy budget of fish. Thus, the growth rate is not temperature-dependent directly but its relationship to temperature emerges from the temperature-scaling of metabolism and consumption. In mizer, metabolism represents all metabolic costs, that is, standard, activity, and movement. We assume metabolism in Mizer scales as standard metabolic rate and refer to it as metabolism or metabolic rate. We use the Arrhenius equation to scale rates relative to their reference value (at 10°C).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/balticseamizereq4.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>The rate-specific temperature sensitives are informed meta-analysis if interspecific experimental data.</p>
+<p>Background resources are also temperature dependent. However, instead of forcing the spectra to observed abundance-at-size, we introduce the Arrhenius equation to the resource spectra's regeneration rate and carrying capacity. Their dynamics are given by the equation:&nbsp;</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/balticseamizereq5.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>where rowp−1 is the population regeneration rate, w- is the carrying capacity of the background resource.</p>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
