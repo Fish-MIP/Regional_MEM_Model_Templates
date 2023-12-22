@@ -4,7 +4,7 @@ Baltic Sea Mizer
 
 **Contacts**
 
-Max Lindmark (
+Max Lindmark
 
 **Spatial scale forcing**
 
