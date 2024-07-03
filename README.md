@@ -23,6 +23,8 @@ Southeast Australia Atlantis
 [East Bass Strait Ecosim](https://github.com/Fish-MIP/Regional_MEM_Model_Templates/blob/main/Ecosim%20models/EWE_EastBassStrait.md)\
 [Cook Strait Ecosim](https://github.com/Fish-MIP/Regional_MEM_Model_Templates/blob/main/Ecosim%20models/EWE_CookStrait.md)
 
+Southeastern Bering Sea
+
 ### Ecospace models
 
 [Brazil Ecospace](https://github.com/Fish-MIP/Regional_MEM_Model_Templates/blob/main/Ecospace%20models/BrazilNortheastern_ECOSPACE.md)
@@ -31,7 +33,7 @@ Southeast Australia Atlantis
 
 [Baltic Sea mizer\
 ](https://github.com/Fish-MIP/Regional_MEM_Model_Templates/blob/main/Mizer%20models/balticsea_mizer.md)Eastern Scotian Shelf mizer\
-Hawaii longline mizer\
+Hawai'i based longline mizer\
 [Prydz Bay (East Antarctica) mizer](https://github.com/Fish-MIP/Regional_MEM_Model_Templates/blob/main/Mizer%20models/PrydzBay_MIZER.md)\
 [Western South Pacific tuna longline mizer](https://github.com/Fish-MIP/Regional_MEM_Model_Templates/blob/main/Mizer%20models/WesternPacificOcean_MIZER.md)
 
