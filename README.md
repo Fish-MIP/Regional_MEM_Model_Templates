@@ -42,4 +42,6 @@ Hawai'i based longline mizer\
 [Northern Humboldt Current OSMOSE](https://github.com/Fish-MIP/Regional_MEM_Model_Templates/blob/main/OSMOSE%20models/NorthernHumboldt_OSMOSE.md)
 
 ## Have questions or suggestions?
-Feel free to create an [issue](https://github.com/Fish-MIP/Regional_MEM_Model_Templates/issues) or [email us](mailto:fishmip.coordinators@gmail.com).
+Feel free to create an [issue](https://github.com/Fish-MIP/Regional_MEM_Model_Templates/issues) or [email us](mailto:fishmip.coordinators@gmail.com).  
+  
+You can also share your questions and suggestions with all our members, head over to the [Discussions tab](https://github.com/Fish-MIP/Regional_MEM_Model_Templates/discussions) and start or contribute to an existing *discussion thread*.
