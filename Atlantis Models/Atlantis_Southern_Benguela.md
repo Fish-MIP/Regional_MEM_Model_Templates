@@ -34,11 +34,11 @@ The current version of the model applies the same fishing mortality rate across 
 
 *How are fishing mortality and catch rates calculated in your model? Please provide equations as well as descriptiom.*
 
-![](images/atlantissouthernbenguela.png){fig-align="center"}
+![image](https://github.com/user-attachments/assets/69cdc27c-f91c-4a31-817a-bb05092bf486)
 
 The southern Benguela Atlantis uses "a fisheries induced mortality rate, defining a proportion of biomass to be harvested per day" option 2 in secion 15.1. Atlantis manual part II (version July 2022).
 
-mFC is the fishing mortality rate, Biom~CX~ is the biomass of a group i in a box j, sel~Y,i~ is the selectivity of fishery Y on group i, managesc~Y~ is the TAC management scalar, mpasc~Y,j~ optional MPA scalar applied to fishery Y in a box j and brok~Y~ is the broken stick management scalar for the fishery Y.
+*mFC* is the fishing mortality rate, $Biom_{CX}$ is the biomass of a group *i* in a box *j*, $sel_{Y,i}$ is the selectivity of fishery *Y* on group *i*, $managesc_{Y}$ is the TAC management scalar, $mpasc_{Y,j}$ optional MPA scalar applied to fishery *Y* in a box *j* and $brok_{Y}$ is the broken stick management scalar for the fishery *Y*.
 
 Source: Atlantis manual part II (version July 2022).
 
