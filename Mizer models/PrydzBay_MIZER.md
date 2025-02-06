@@ -1,75 +1,77 @@
-**Model name**
+# Model name
 
 Prydz Bay mizer model
 
-**Contacts**
+# Contacts
 
-Kieran Murphy ([kieran.murphy\@utas.edu.au](mailto:kieran.murphy@utas.edu.au)) 
+Kieran Murphy ([kieran.murphy@utas.edu.au](mailto:kieran.murphy@utas.edu.au)) 
 
-**Spatial scale forcing**
+# Spatial scale forcing
 
 Regional (shape files provided, mizer is not spatial so no point subdividing the area)
 
-**Levels of gear disaggregation**
+# Levels of gear disaggregation
 
 Species-specific gears (taken from functional-group level resolution from Sea Around Us)
 
-**Levels of functional group disaggregation**
+# Levels of functional group disaggregation
 
 Species-specific gears, no functional groups in the Mizer model 
 
-**Spatial grid-cell allocation method**
+# Spatial grid-cell allocation method
 
 Summarised across the entire model region
 
-**Fishing mortality rate equation**
+# Fishing mortality rate equation
 
 Fishing mortality by species and across time fed in directly from Atlantis model. Catch rates are computed from assumed biomasses and fishing mortalities.
 
-**Selectivity (size,age,species)**
+# Selectivity (size, age, species)
 
 Selectivity naively assumed to be a function of maturation size for each species.
 
-**Model calibration**
+# Model calibration
 
 Spawning stock biomass by species taken from Atlantis. Model parameters tuned to match these. 
 
-**Catchability and Creep (yearly rate of change catchability) Estimates**
+# Catchability and Creep (yearly rate of change catchability) Estimates
 
-\[Please provide details on the specific estimated parameters from the calibration, e.g. range of creep of 2-5% per year; and catchability coefficients per gear / functional group as necessary\]
-
-N/A\
-**Further details on calibration**
-
-Further calibration planned with historical catches and species trends over time using expert opinion.
-
-**Statistical metrics**
-
-\[Please provide detail on the statistical method used in your calibration - E.g. optimisation, error terms\]
-
-N/A\
-**Statistical results (summary)**
-
-\[Please provide a summary of the metrics and results associated with your model calibration - E.g. RMSE with observed catches and any other process-based or theoretical criteria used to calibrate the model, comparison of modelled biomass, growth rates, P\"B ratios etc\]
-
-N/A\
-**Model changes or  improvements(s) made as a result of calibration**
-
-\[Please provide detail of any other parameters or model changes since the last round as a result of this calibration\]
-
-N/A\
-**ADDITIONAL DETAILS FOR REGIONAL MODELS ONLY:**
-
-**Downscaling method**
-
-\[Please describe further details how the LME level fishing effort was downscaled to your region, providing further information on what data, if any were used, E.g. \]
+*Please provide details on the specific estimated parameters from the calibration, e.g. range of creep of 2-5% per year; and catchability coefficients per gear / functional group as necessary.*
 
 N/A
 
-**The \"base\" year range of the regional model**
+# Further details on calibration
 
-\[If you expressed effort relative to the effort in your base model, which year was the base year and how was this done\]
+Further calibration planned with historical catches and species trends over time using expert opinion.
 
-N/A\
-\
-\
+# Statistical metrics
+
+*Please provide detail on the statistical method used in your calibration - E.g. optimisation, error terms*
+
+N/A
+
+# Statistical results (summary)
+
+*Please provide a summary of the metrics and results associated with your model calibration - E.g. RMSE with observed catches and any other process-based or theoretical criteria used to calibrate the model, comparison of modelled biomass, growth rates, P\"B ratios, etc.*
+
+N/A
+
+# Model changes or  improvements(s) made as a result of calibration
+
+*Please provide detail of any other parameters or model changes since the last round as a result of this calibration*
+
+N/A
+
+# ADDITIONAL DETAILS FOR REGIONAL MODELS ONLY:
+
+## Downscaling method
+
+*Please describe further details how the LME level fishing effort was downscaled to your region, providing further information on what data, if any were used.*
+
+N/A
+
+## The \"base\" year range of the regional model
+
+*If you expressed effort relative to the effort in your base model, which year was the base year and how was this done.*
+
+N/A
