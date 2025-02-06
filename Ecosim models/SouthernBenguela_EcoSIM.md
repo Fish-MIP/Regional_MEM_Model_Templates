@@ -80,125 +80,69 @@ The following fishing gears were used, with fishing effort disaggregated accordi
 
 The following functional groups were used, with corresponding effort allocated to those as indicated
 
-+------------------------+-----------------------------------------------------------+
+
 | **Functional group**   | **Corresponding effort series where applicable**          |
-+------------------------+-----------------------------------------------------------+
+| ---------------------- | --------------------------------------------------------- |
 | Phytoplankton 1        |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Phytoplakton 2         |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Microzooplankton       |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Mesozooplankton        |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Macrozooplankton       |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Gelatinous Zooplankton |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Anchovy recruits       | Harvest proportion by Purse seine fishery                 |
-+------------------------+-----------------------------------------------------------+
 | Anchovy spawners       | Harvest proportion by Purse seine fishery                 |
-+------------------------+-----------------------------------------------------------+
 | Juvenile sardine       | Harvest proportion by Purse seine fishery                 |
-+------------------------+-----------------------------------------------------------+
 | Adult sardine          | Harvest proportion by Purse seine fishery                 |
-+------------------------+-----------------------------------------------------------+
 | Redeye                 |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Other small pelagics   |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Juvenile Hmack         |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Adult Hmack            | Midwater trawl effort                                     |
-+------------------------+-----------------------------------------------------------+
 | Chub mackerel          |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Lanternfish            |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Lightfish              |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Snoek                  | Snoek linefishery effort                                  |
-+------------------------+-----------------------------------------------------------+
-| Tuna&Swordfish         |                                                           |
-+------------------------+-----------------------------------------------------------+
+| Tuna \& Swordfish      |                                                           |
 | Large Sparids          | Large Sparids linefishery effort West Coast               |
-|                        |                                                           |
-|                        | Large Sparids linefishery effort South Coast              |
-+------------------------+-----------------------------------------------------------+
+| Large Sparids          | Large Sparids linefishery effort South Coast              |
 | Medium Sparids         | Medium Sparids linefishery effort West Coast              |
-|                        |                                                           |
-|                        | Medium Sparids linefishery effort South Coast             |
-+------------------------+-----------------------------------------------------------+
+| Medium Sparids         | Medium Sparids linefishery effort South Coast             |
 | Sciaenids              | Sciaenids linefishery effort West Coast                   |
-|                        |                                                           |
-|                        | Sciaenids linefishery effort South Coast                  |
-+------------------------+-----------------------------------------------------------+
+| Sciaenids              | Sciaenids linefishery effort South Coast                  |
 | Yellowtail             | Yellowtail linefishery effort                             |
-+------------------------+-----------------------------------------------------------+
 | Other linefish         |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Mullet                 |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Chokka Squid           | Jig fishery effort                                        |
-+------------------------+-----------------------------------------------------------+
 | Other cephalopods      |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Small M.capensis       |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Large M. capensis      | Offshore demersal trawl effort West Coast                 |
-|                        |                                                           |
-|                        | Offshore demersal trawl effort South Coast                |
-+------------------------+-----------------------------------------------------------+
+| Large M. capensis      | Offshore demersal trawl effort South Coast                |
 | Small M. paradoxus     | Offshore demersal trawl effort West Coast                 |
-|                        |                                                           |
-|                        | Offshore demersal trawl effort South Coast                |
-+------------------------+-----------------------------------------------------------+
+| Small M. paradoxus     | Offshore demersal trawl effort South Coast                |
 | Large M. paradoxus     | Offshore demersal trawl effort West Coast                 |
-|                        |                                                           |
-|                        | Offshore demersal trawl effort South Coast                |
-+------------------------+-----------------------------------------------------------+
+| Large M. paradoxus     | Offshore demersal trawl effort South Coast                |
 | PF Demersals           |                                                           |
-+------------------------+-----------------------------------------------------------+
 | BF Demersals           |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Agulhas Sole           | Inshore trawl effort targeting Agulhas sole (South Coast) |
-+------------------------+-----------------------------------------------------------+
 | PF Chondrichthyans     | Chondrichthyan Linefishery effort West Coast              |
-|                        |                                                           |
-|                        | Chondrichthyan Linefishery effort South Coast             |
-+------------------------+-----------------------------------------------------------+
+| PF Chondrichthyans     | Chondrichthyan Linefishery effort South Coast             |
 | BF Chondrichthyans     |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Apex Chondricthyans    |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Seals                  |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Cetaceans              |                                                           |
-+------------------------+-----------------------------------------------------------+
 | African Penguin        |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Cape Gannet            |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Cape Cormorant         |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Other seabirds         |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Benthic Producers      |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Meiobenthos            |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Macrobenthos           |                                                           |
-+------------------------+-----------------------------------------------------------+
 | WC rock lobster\*      |                                                           |
-+------------------------+-----------------------------------------------------------+
 | SC rock lobster        |                                                           |
-+------------------------+-----------------------------------------------------------+
 | Detritus               |                                                           |
-+------------------------+-----------------------------------------------------------+
 
 **Spatial grid-cell allocation method**
 
-The temporally-dynamic Ecosim model was used in this round, thus not spatial (effort was considered applicable across the whole model area of the Southern Benguela)\
+The temporally-dynamic Ecosim model was used in this round, thus not spatial (effort was considered applicable across the whole model area of the Southern Benguela).
 
 **Fishing mortality rate equation**
 
@@ -230,7 +174,7 @@ Model calibration was done via fitting considering residual sum of squares reduc
 
 **Model changes or  improvements(s) made as a result of calibration**
 
-The initial model incorporated the following environmental series to improve model fitting and derive \"vulnerability\" parameters to quantify predator-prey interactions. **These two environmental series were subsequently not used for FishMIP simulations (see \"Environmental and biogeochemical variables and equations\" below) ,** but the vulnerabilities were retained to capture likely to-down/bottom-up interactions between pairs of functional groups. 
+The initial model incorporated the following environmental series to improve model fitting and derive \"vulnerability\" parameters to quantify predator-prey interactions. **These two environmental series were subsequently not used for FishMIP simulations (see \"Environmental and biogeochemical variables and equations\" below),** but the vulnerabilities were retained to capture likely to-down/bottom-up interactions between pairs of functional groups. 
 
 The Large Phytoplankton functional group was driven by a forcing function derived from a cumulative upwelling index (Lamont et al. 2018)
 
