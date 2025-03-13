@@ -22,9 +22,35 @@ Regional at 1.2 $km^2$ grid resolution (515 lines \* 250 columns, 17,290 grid ce
 
 # Spatial grid-cell allocation method
 
-Simple fishing effort gravity model based on cost/benefit analysis
+Simple fishing effort gravity model based on cost/benefit analysis estimates the spatial distribution of fishing effort based on fleet behavior. The formula is:
 
-JS to dig up formula
+$$E_i = E_{\text{total}} \times \frac{G_i}{\sum G_j}$$
+
+where:
+
+•	$$E_i$$ = Fishing effort in cell $$i$$.
+
+•	$$E_total$$ = Total fleet effort across all cells.
+
+•	$$G_i$$ = Gravity function for cell $$i$$, which represents the attractiveness of the cell for fishing.
+
+•	$$∑G_j$$ = Sum of gravity values across all cells.
+
+The gravity function $$G_i$$ is defined as:
+
+$$G_i = R_i \times A_i \times \left( \frac{1}{1 + d_i^\lambda} \right)$$
+
+where:
+
+•	$$R_i$$ = Resource availability (e.g., biomass of target species).
+
+• $$A_i$$ = Accessibility of the cell (e.g., fleet-specific restrictions or depth suitability).
+
+•	$$d_i$$ = Distance from the fleet’s home port or a reference location.
+
+•	$$λ$$ = Distance decay parameter, which controls how quickly fishing effort declines with distance.
+
+This model assumes that fishing fleets are attracted to high-resource, high-accessibility areas while being deterred by distance-related costs.
 
 # Fishing mortality rate equation
 
