@@ -1,117 +1,54 @@
-# Model name
+# Regional ecosystem model name
+Cook Strait EwE
 
-EwE Cook Strait
+## Contacts
+Tyler Eddy – tyler.eddy@mi.mun.ca
 
-# Contact
+## Spatial scale forcing
+Regional scale, no spatial resolution
 
-Tyler Eddy - Memorial University of Newfoundland, Canada - [tyler.eddy\@mi.mun.ca](mailto:tyler.eddy@mi.mun.ca)
+## Levels of gear disaggregation
+Pots_and_Traps; Lines_Handlines_and_poles; Gillnets; Others 
+Global effort data was not used due to a correlation with fishing effort of less than 0.5
 
-# Spatial scale forcing
+## Levels of functional group disaggregation
+lobsterscrab (Pots_and_Traps); demersal30-90cm (Lines_Handlines_and_poles; Gillnets); demersalmollusc (Others)  
 
-Scale: region; Resolution: ¼ and 1 degree model runs
+## Spatial grid-cell allocation method
+Non spatial model
 
-# Levels of gear disaggregation
+## Fishing mortality rate equation
+Fishing mortality was provided by the New Zealand fisheries science and management department
 
-Species specific fisheries are included through the model, implemented as fishing mortality by species. Recreational fisheries fleets are distinguished from commercial fisheries fleets. 
-
-# Levels of functional group disaggregation
-
-Species specific fisheries (highlighted in bold) are included through the model, implemented as fishing mortality by species based on observed fisheries catch data.
-
-1. Birds
-
-2. **Lobster** 
-
-3. Mob inverts herb
-
-4. **Abalone (paua)**
-
-5. Urchins (kina)
-
-6. Mob invert carn
-
-7. Sea cucumber
-
-8. Phytal/infaunal inverts
-
-9. Sponges
-
-10. Sessile inverts
-
-11. Fish cryptic
-
-12. Fish inverts
-
-13. **Fish piscivores**
-
-14. Fish planktivores
-
-15. **Fish herbivores**
-
-16. Microphytes
-
-17. Macroalgae canopy
-
-18. Macroalgae foliose
-
-19. Macroalgae crustose
-
-20. Meso/macrozooplankton
-
-21. Microzooplankton
-
-22. Phytoplankton
-
-23. Bacteria
-
-24. Detritus
-
-# Spatial grid-cell allocation method
-
-Model does not have spatial resolution. 
-
-# Fishing mortality rate equation
-
-Fishing mortality is used as an input in the model, as calculated by stock assessment models.
-
-# Selectivity (size,age,species)
-
+## Selectivity (size, age, species)
 n/a
 
-# Model calibration
+## Model calibration
+Model was driven with time series of fishing morality and modelled functional group biomasses were calibrated to observed functional group biomasses
 
-Model is forced with a time series of fisheries mortality and calibrated to observed fisheries catches and observed species biomass from fisheries independent surveys.
+## Catchability and creep (yearly rate of change catchability) estimates
+n/a, fishing mortality is used
 
-# Catchability and Creep (yearly rate of change catchability) Estimates
+## Further details on calibration 
+*Have you used other metrics or data in your calibration? Please include a description and equations in this section.*
 
-Catchability and creep are captured by fisheries mortality.
+## Statistical metrics
+n/a
 
-# Further details on calibration
+## Statistical results (summary)
+Comparison of modelled biomass to observed biomass to produce best correlation coefficient
 
-Time series of observed species biomass based on surveys.
+## Model changes or improvements made as a result of calibration
+n/a
 
-# Statistical metrics
-
-Minimization of sum of squares between predicted and observed data through optimization.
-
-# Statistical results (summary)
-
-Minimization of sum of squares between predicted and observed data through optimization.
-
-# Model changes or  improvements(s) made as a result of calibration
-
-Change in vulnerability parameter estimates to produce best fit.
-
-# ADDITIONAL DETAILS FOR REGIONAL MODELS ONLY:
+# Additional details 
+The sections below are designed to better capture additional steps needed to run ecosystem models at a regional scale.
 
 ## Downscaling method
+Due to the global fishing effort data having a correlation with regional fishing effort data of less than 0.5, global effort data was not used
 
-Still waiting for fishing effort data.
+## “Base year" range of the regional model
+1945
 
-# The \"base\" year range of the regional model
-
-Base year of model is 1945. Have not yet applied global fishing effort data.
-
-# Environmental and biogeochemical variables and equations
-
-NPP anomaly derived from ESM projections applied to primary producer groups.
+## Environmental and biogeochemical variables and equations
+intpp was applied using the delta method as a forcing function to modify primary production in EwE, similar to 2b and 3b simulation rounds
