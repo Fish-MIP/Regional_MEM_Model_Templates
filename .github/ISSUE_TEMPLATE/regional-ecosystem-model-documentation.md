@@ -36,7 +36,7 @@ assignees: lidefi87
 ## Model calibration
 *Catchability terms can be used to calibrate the model to catches. **Note that calibration should only include data up to 2004**. Please state how you estimated your model parameters, as well as the metrics and criteria you used to calibrate your model. Please include equations.*
 
-## Catchability and Creep (yearly rate of change catchability) Estimates
+## Catchability and creep (yearly rate of change catchability) estimates
 *Please provide details on the specific estimated parameters from the calibration, e.g. range of creep of 2-5% per year; and catchability coefficients per gear / functional group as necessary.*
 
 ## Further details on calibration 
