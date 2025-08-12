@@ -29,6 +29,9 @@ Southeastern Bering Sea
 
 [Brazil Ecospace](https://github.com/Fish-MIP/Regional_MEM_Model_Templates/blob/main/Ecospace%20models/BrazilNortheastern_ECOSPACE.md)
 
+### MICE models
+[DynaMICE California Current](https://github.com/Fish-MIP/Regional_MEM_Model_Templates/blob/main/MICE%20models/DynaMICE_California_Current.md)  
+
 ### mizer models
 
 [Baltic Sea mizer\
