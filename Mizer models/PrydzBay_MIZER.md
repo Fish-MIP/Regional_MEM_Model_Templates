@@ -1,6 +1,6 @@
 # Model name
 
-Prydz Bay mizer model
+Prydz Bay Mizer model
 
 # Contacts
 
@@ -8,7 +8,7 @@ Kieran Murphy ([kieran.murphy@utas.edu.au](mailto:kieran.murphy@utas.edu.au)) 
 
 # Spatial scale forcing
 
-Regional (shape files provided, mizer is not spatial so no point subdividing the area)
+Regional (shapefiles provided, mizer is not spatial, so no point subdividing the area)
 
 # Levels of gear disaggregation
 
@@ -36,7 +36,7 @@ Spawning stock biomass by species taken from Atlantis. Model parameters tuned to
 
 # Catchability and Creep (yearly rate of change catchability) Estimates
 
-*Please provide details on the specific estimated parameters from the calibration, e.g. range of creep of 2-5% per year; and catchability coefficients per gear / functional group as necessary.*
+*Please provide details on the specific estimated parameters from the calibration, e.g., range of creep of 2-5% per year; and catchability coefficients per gear / functional group as necessary.*
 
 N/A
 
@@ -46,17 +46,17 @@ Further calibration planned with historical catches and species trends over time
 
 # Statistical metrics
 
-*Please provide detail on the statistical method used in your calibration - E.g. optimisation, error terms*
+*Please provide detail on the statistical method used in your calibration - e.g., optimisation, error terms*
 
 N/A
 
 # Statistical results (summary)
 
-*Please provide a summary of the metrics and results associated with your model calibration - E.g. RMSE with observed catches and any other process-based or theoretical criteria used to calibrate the model, comparison of modelled biomass, growth rates, P\"B ratios, etc.*
+*Please provide a summary of the metrics and results associated with your model calibration - e.g., RMSE with observed catches and any other process-based or theoretical criteria used to calibrate the model, comparison of modelled biomass, growth rates, P\"B ratios, etc.*
 
 N/A
 
-# Model changes or  improvements(s) made as a result of calibration
+# Model changes or improvements(s) made as a result of calibration
 
 *Please provide detail of any other parameters or model changes since the last round as a result of this calibration*
 
